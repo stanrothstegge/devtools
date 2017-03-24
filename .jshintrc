@@ -1,0 +1,100 @@
+{
+  
+    // Dit is een standaard confirugatie file voor jshint
+
+    // Verboden Options:
+    // De volgende options zijn depricated en worden daarom niet opgenomen in het confirugatiefile:
+    // camelcase, enforceall, es3, es5, immed, indent, maxlen, newcap, noempty, quotmark,
+    // globalstrict, laxbreak, laxcomma, multistr, sub,
+
+    "maxerr"        : 15,       // {int} Maximaal aantal fouten, dat we acceptabel vinden.
+
+    // ********* //
+    // Enforcing //
+    // ********* //
+
+    /**
+    bitwise :
+    Verbied het gebruik van bitwise operators, zoals ^ | &
+    doel: voorkomt syntaxfouten
+    **/
+    "bitwise"       : true,
+    /**
+    curly :
+    Vereist dat er curly brackets {} worden gebruikt.
+    doel: verhoogt leesbaarheid
+    **/
+    "curly"         : true,
+    /**
+    Verplicht het gebruik van de tripple equal(===), bij het maken van vergelijkingen.
+    doel: voorkomt syntaxfouten, verbeterd leesbaarheid
+    **/
+    "eqeqeq"        : true,
+      /**
+    Geeft de mogelijkheid om de versie van ECMAScript te specifieren.
+    overbodig: niet relevant voor de meeste projecten.
+    **/
+    "esversion"     : false,
+    /**
+    Dwingt het filteren van for loops af
+    zie: https://javascriptweblog.wordpress.com/2011/01/04/exploring-javascript-for-in-loops/
+    doel: code stabieler, beter leesbaar.
+    **/
+    "forin"         : true,
+    /**
+    Verbiedt het overschrijven van native objects zoals: Array en Date.
+    doel: een object kan niet extenden van prototypes.
+    **/
+    "freeze"        : true,
+    /**
+    Negeert waarschuwing over het declareren van variabelen.
+    doel: suppressing important stuff = bad :)
+    **/
+    "funcscope"     : false;
+    /**
+    Dwing af dat (variabelen|functies) moeten worden gedefinieerd voordat ze gebruikt worden.
+    doel: nuttig om bugs te voorkomen.
+    **/
+    "latedef"       : true,
+    /**
+    Dwing af dat de Construcoren met een Hoofdletter beginnen
+    doel: verbeterd de leesbaarheid
+    **/
+    "newcap"        : true,
+    /**
+    Dwingt af dat er geen empty blocks gebruikt mogen worden.
+    doel: geen overbodige code, verbeterd leesbaarheid.
+    **/
+    "noempty"       : true,     // true: Prohibit use of empty blocks
+    /**
+    Verbiedt het gebruik van '++' o '--'
+    **/
+    "plusplus"      : true,    // true: Prohibit use of `++` and `--`
+    /**
+    voorkomt global leaks door af te dwingen dat alle non-global variabelen worden gedeclareerd.
+    **/
+    "undef"         : true,
+    /**
+    Controlleer of er variabelen in de code zitten die nooit worden gebruikt.
+    **/
+    "unused"        : true,
+    /**
+    Maximaal aantal parameters per functie.
+    **/
+    "maxparams"     : 5,
+    /**
+    Maximaal aantal statements per functie.
+    **/
+    "maxstatements" : 30,    // {int} Max number statements per function
+    /**
+    Maximaal aantal chars per line.
+    **/
+    "maxlen"        : 60
+    /**
+    Var statement are evil
+    **/
+    "varstmt"       : true,
+
+    // Custom Globals
+    "globals"       : {}        // additional predefined global variables
+}
